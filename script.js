@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const list = [];
     for (let i = 0; i < TOTAL_FRAMES; i++) {
       const num = i.toString().padStart(3, '0');
-      list.push(`./images/generate_a_smooth_video_202608110105_${num}.jpg`);
+      list.push(`./Images/generate_a_smooth_video_202608110105_${num}.jpg`);
     }
     return list;
   }
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function preloadImages() {
     for (let i = 0; i < TOTAL_FRAMES; i++) {
       const img = new Image();
-      img.src = frameUrls[i] || `./images/generate_a_smooth_video_202608110105_${i.toString().padStart(3, '0')}.jpg`;
+      img.src = frameUrls[i] || `./Images/generate_a_smooth_video_202608110105_${i.toString().padStart(3, '0')}.jpg`;
 
       const handleLoad = () => {
         loadedCount++;
