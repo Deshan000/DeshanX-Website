@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — DeshanX Developer</title>
+  <meta name="description" content="Explore all of DeshanX's web development projects — from full-stack apps to crypto dashboards and e-commerce platforms built with React, Node.js, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+
+<body class="projects-body">
+
+  <!-- Animated Gradient Background -->
+  <div class="proj-bg-canvas">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <main id="content-container" style="background: transparent;">
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">DeshanX</div>
+      <nav class="nav-links">
+        <a href="index.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html" class="nav-active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn-purple">
+        Get In Touch <span class="arrow-icon">&#8599;</span>
+      </a>
+    </header>
+
+    <!-- ===== SECTION 1 — Hero Header ===== -->
+    <section class="proj-hero section">
+      <div class="proj-hero-inner">
+        <span class="category-tag">MY WORK</span>
+        <h1 class="proj-hero-title">Projects That <span class="gradient-text">Define</span> My Craft</h1>
+        <p class="proj-hero-sub">
+          A curated collection of real-world applications, experiments, and solutions I've built spanning
+          full-stack web development, UI/UX, and modern JavaScript ecosystems. Every project tells a story.
+        </p>
+        <div class="proj-hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num">50+</span>
+            <span class="hero-stat-label">Total Projects</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">12</span>
+            <span class="hero-stat-label">Live Products</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">8</span>
+            <span class="hero-stat-label">Open Source</span>
+          </div>
+        </div>
+        <!-- Filter pills -->
+        <div class="filter-pills" id="filter-pills">
+          <button class="pill active" data-filter="all" id="pill-all">All</button>
+          <button class="pill" data-filter="fullstack" id="pill-fullstack">Full-Stack</button>
+          <button class="pill" data-filter="frontend" id="pill-frontend">Frontend</button>
+          <button class="pill" data-filter="backend" id="pill-backend">Backend</button>
+          <button class="pill" data-filter="mobile" id="pill-mobile">Mobile</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2 — Projects Showcase Grid ===== -->
+    <section class="proj-grid-section section" id="all-projects">
+      <div class="section-header center">
+        <span class="category-tag">FEATURED WORK</span>
+        <h2 class="section-heading">All Projects</h2>
+        <div class="heading-accent-line"></div>
+      </div>
+
+      <div class="proj-showcase-grid" id="projects-grid">
+
+        <!-- Project Card 1 -->
+        <div class="proj-card" data-category="fullstack" id="proj-card-1">
+          <div class="proj-card-header">
+            <span class="proj-tag">Full-Stack</span>
+            <div class="proj-links">
+              <a href="#" class="proj-icon-link" title="Live Demo" aria-label="View live demo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="proj-icon-link" title="GitHub" aria-label="View GitHub repository">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="proj-card-visual" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);">
+            <div class="proj-visual-icon">&#x1F6D2;</div>
+            <div class="proj-visual-glow"></div>
+          </div>
+          <div class="proj-card-body">
+            <h3 class="proj-card-title">E-Commerce Platform</h3>
+            <p class="proj-card-desc">Full-stack e-commerce solution with real-time inventory management, secure payments via Stripe, and an intuitive admin dashboard built with Next.js and Node.js.</p>
+            <div class="proj-tech-stack">
+              <span class="tech-pill">Next.js</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">MongoDB</span>
+              <span class="tech-pill">Stripe</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="proj-card" data-category="frontend" id="proj-card-2">
+          <div class="proj-card-header">
+            <span class="proj-tag">Frontend</span>
+            <div class="proj-links">
+              <a href="#" class="proj-icon-link" title="Live Demo" aria-label="View live demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="#" class="proj-icon-link" title="GitHub" aria-label="View GitHub repository"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            </div>
+          </div>
+          <div class="proj-card-visual" style="background: linear-gradient(135deg, #0c4a6e 0%, #075985 50%, #0369a1 100%);">
+            <div class="proj-visual-icon">&#x1F4CA;</div>
+            <div class="proj-visual-glow" style="background: radial-gradient(circle, rgba(14,165,233,0.3) 0%, transparent 70%);"></div>
+          </div>
+          <div class="proj-card-body">
+            <h3 class="proj-card-title">Crypto Dashboard</h3>
+            <p class="proj-card-desc">Real-time cryptocurrency tracking dashboard with live price charts, portfolio management, and WebSocket-powered market data updates using React and Chart.js.</p>
+            <div class="proj-tech-stack">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Chart.js</span>
+              <span class="tech-pill">WebSocket</span>
+              <span class="tech-pill">Tailwind</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="proj-card" data-category="fullstack" id="proj-card-3">
+          <div class="proj-card-header">
+            <span class="proj-tag">Full-Stack</span>
+            <div class="proj-links">
+              <a href="#" class="proj-icon-link" title="Live Demo" aria-label="View live demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="#" class="proj-icon-link" title="GitHub" aria-label="View GitHub repository"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            </div>
+          </div>
+          <div class="proj-card-visual" style="background: linear-gradient(135deg, #14532d 0%, #166534 50%, #15803d 100%);">
+            <div class="proj-visual-icon">&#x2705;</div>
+            <div class="proj-visual-glow" style="background: radial-gradient(circle, rgba(34,197,94,0.25) 0%, transparent 70%);"></div>
+          </div>
+          <div class="proj-card-body">
+            <h3 class="proj-card-title">Task Management App</h3>
+            <p class="proj-card-desc">Collaborative Kanban-style task manager with drag-and-drop, real-time sync between team members, JWT auth, and rich notification system powered by Socket.io.</p>
+            <div class="proj-tech-stack">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">Socket.io</span>
+              <span class="tech-pill">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="proj-card" data-category="backend" id="proj-card-4">
+          <div class="proj-card-header">
+            <span class="proj-tag">Backend</span>
+            <div class="proj-links">
+              <a href="#" class="proj-icon-link" title="Live Demo" aria-label="View live demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="#" class="proj-icon-link" title="GitHub" aria-label="View GitHub repository"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            </div>
+          </div>
+          <div class="proj-card-visual" style="background: linear-gradient(135deg, #431407 0%, #7c2d12 50%, #9a3412 100%);">
+            <div class="proj-visual-icon">&#x1F512;</div>
+            <div class="proj-visual-glow" style="background: radial-gradient(circle, rgba(234,88,12,0.25) 0%, transparent 70%);"></div>
+          </div>
+          <div class="proj-card-body">
+            <h3 class="proj-card-title">REST API Gateway</h3>
+            <p class="proj-card-desc">Scalable microservices API gateway with rate limiting, JWT authentication, request caching via Redis, and comprehensive Swagger documentation for 20+ endpoints.</p>
+            <div class="proj-tech-stack">
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Redis</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">Swagger</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 5 -->
+        <div class="proj-card" data-category="frontend" id="proj-card-5">
+          <div class="proj-card-header">
+            <span class="proj-tag">Frontend</span>
+            <div class="proj-links">
+              <a href="#" class="proj-icon-link" title="Live Demo" aria-label="View live demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="#" class="proj-icon-link" title="GitHub" aria-label="View GitHub repository"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            </div>
+          </div>
+          <div class="proj-card-visual" style="background: linear-gradient(135deg, #2d1b69 0%, #4a3080 50%, #6b46c1 100%);">
+            <div class="proj-visual-icon">&#x1F3A8;</div>
+            <div class="proj-visual-glow" style="background: radial-gradient(circle, rgba(139,92,246,0.3) 0%, transparent 70%);"></div>
+          </div>
+          <div class="proj-card-body">
+            <h3 class="proj-card-title">Design System UI Kit</h3>
+            <p class="proj-card-desc">Comprehensive React component library with 60+ reusable components, Storybook documentation, accessibility compliance, and dark/light theme support.</p>
+            <div class="proj-tech-stack">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">Storybook</span>
+              <span class="tech-pill">CSS Modules</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 6 -->
+        <div class="proj-card" data-category="mobile" id="proj-card-6">
+          <div class="proj-card-header">
+            <span class="proj-tag">Mobile</span>
+            <div class="proj-links">
+              <a href="#" class="proj-icon-link" title="Live Demo" aria-label="View live demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="#" class="proj-icon-link" title="GitHub" aria-label="View GitHub repository"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            </div>
+          </div>
+          <div class="proj-card-visual" style="background: linear-gradient(135deg, #0c1a2e 0%, #0f3460 50%, #1a56a0 100%);">
+            <div class="proj-visual-icon">&#x1F4F1;</div>
+            <div class="proj-visual-glow" style="background: radial-gradient(circle, rgba(59,130,246,0.25) 0%, transparent 70%);"></div>
+          </div>
+          <div class="proj-card-body">
+            <h3 class="proj-card-title">FitTrack Mobile App</h3>
+            <p class="proj-card-desc">Cross-platform fitness tracking app with workout logging, nutrition tracking, progress charts, and social challenges built with React Native and Firebase.</p>
+            <div class="proj-tech-stack">
+              <span class="tech-pill">React Native</span>
+              <span class="tech-pill">Firebase</span>
+              <span class="tech-pill">Expo</span>
+              <span class="tech-pill">Redux</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- No results state -->
+      <div class="no-results" id="no-results" style="display:none;">
+        <span class="no-results-emoji">&#x1F50D;</span>
+        <p>No projects found for this filter.</p>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3 — Development Process Timeline ===== -->
+    <section class="process-section section" id="process">
+      <div class="section-header center">
+        <span class="category-tag">HOW I WORK</span>
+        <h2 class="section-heading">My Development Process</h2>
+        <div class="heading-accent-line"></div>
+        <p class="section-subtext">From concept to deployment, every project follows a structured, quality-driven workflow.</p>
+      </div>
+
+      <div class="process-timeline">
+
+        <div class="process-step" id="process-step-1">
+          <div class="step-connector-line"></div>
+          <div class="step-icon-wrap">
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <span class="step-num">01</span>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Discovery &amp; Planning</h3>
+            <p class="step-desc">Deep dive into client requirements, market research, and technical feasibility. I map out the architecture, wireframes, and milestones before writing a single line of code.</p>
+            <div class="step-tools">
+              <span class="tool-badge">Figma</span>
+              <span class="tool-badge">Notion</span>
+              <span class="tool-badge">Miro</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step" id="process-step-2">
+          <div class="step-connector-line"></div>
+          <div class="step-icon-wrap">
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <span class="step-num">02</span>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Design &amp; Prototype</h3>
+            <p class="step-desc">Crafting pixel-perfect UI designs with interactive prototypes. Iterating based on feedback until the experience feels intuitive, accessible, and visually stunning.</p>
+            <div class="step-tools">
+              <span class="tool-badge">Figma</span>
+              <span class="tool-badge">Adobe XD</span>
+              <span class="tool-badge">Framer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step" id="process-step-3">
+          <div class="step-connector-line"></div>
+          <div class="step-icon-wrap">
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/>
+              </svg>
+            </div>
+            <span class="step-num">03</span>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Build &amp; Develop</h3>
+            <p class="step-desc">Clean, scalable code with modern frameworks. Feature-driven development with Git version control, code reviews, and CI/CD pipelines ensuring quality at every stage.</p>
+            <div class="step-tools">
+              <span class="tool-badge">VS Code</span>
+              <span class="tool-badge">Git</span>
+              <span class="tool-badge">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step" id="process-step-4">
+          <div class="step-icon-wrap">
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <span class="step-num">04</span>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Test, Launch &amp; Optimize</h3>
+            <p class="step-desc">Thorough testing across devices and browsers, performance audits, accessibility checks, and SEO optimization before a smooth production launch. Post-launch monitoring included.</p>
+            <div class="step-tools">
+              <span class="tool-badge">Lighthouse</span>
+              <span class="tool-badge">Jest</span>
+              <span class="tool-badge">Vercel</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4 — Tech Stack Showcase ===== -->
+    <section class="techstack-section section" id="tech-stack">
+      <div class="section-header center">
+        <span class="category-tag">TOOLKIT</span>
+        <h2 class="section-heading">Technologies Behind the Work</h2>
+        <div class="heading-accent-line"></div>
+        <p class="section-subtext">The modern stack I rely on to build fast, scalable, and beautiful digital products.</p>
+      </div>
+
+      <div class="techstack-categories">
+
+        <div class="tech-category-card" id="tech-cat-1">
+          <div class="tech-cat-header">
+            <div class="tech-cat-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="tech-cat-title">Frontend</h3>
+          </div>
+          <div class="tech-cat-items">
+            <div class="tech-item-row">
+              <span class="tech-badge react">&#x269B;</span><span class="tech-item-name">React.js</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:85%"></div></div>
+              <span class="tech-item-pct">85%</span>
+            </div>
+            <div class="tech-item-row">
+              <span class="tech-badge next">N</span><span class="tech-item-name">Next.js</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:80%"></div></div>
+              <span class="tech-item-pct">80%</span>
+            </div>
+            <div class="tech-item-row">
+              <span class="tech-badge ts">TS</span><span class="tech-item-name">TypeScript</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:85%"></div></div>
+              <span class="tech-item-pct">85%</span>
+            </div>
+            <div class="tech-item-row">
+              <span class="tech-badge tailwind">&#x2248;</span><span class="tech-item-name">Tailwind CSS</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:90%"></div></div>
+              <span class="tech-item-pct">90%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category-card" id="tech-cat-2">
+          <div class="tech-cat-header">
+            <div class="tech-cat-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            </div>
+            <h3 class="tech-cat-title">Backend</h3>
+          </div>
+          <div class="tech-cat-items">
+            <div class="tech-item-row">
+              <span class="tech-badge node">&#x2B22;</span><span class="tech-item-name">Node.js</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:80%"></div></div>
+              <span class="tech-item-pct">80%</span>
+            </div>
+            <div class="tech-item-row">
+              <span class="tech-badge" style="background:#000;color:#fff;font-size:9px;font-weight:900;">EX</span><span class="tech-item-name">Express.js</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:85%"></div></div>
+              <span class="tech-item-pct">85%</span>
+            </div>
+            <div class="tech-item-row">
+              <span class="tech-badge" style="background:#4DB33D;font-size:9px;font-weight:900;">M</span><span class="tech-item-name">MongoDB</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:75%"></div></div>
+              <span class="tech-item-pct">75%</span>
+            </div>
+            <div class="tech-item-row">
+              <span class="tech-badge" style="background:#336791;font-size:9px;font-weight:900;">PG</span><span class="tech-item-name">PostgreSQL</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:72%"></div></div>
+              <span class="tech-item-pct">72%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category-card" id="tech-cat-3">
+          <div class="tech-cat-header">
+            <div class="tech-cat-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3 class="tech-cat-title">DevOps &amp; Tools</h3>
+          </div>
+          <div class="tech-cat-items">
+            <div class="tech-item-row">
+              <span class="tech-badge git">&#x25C6;</span><span class="tech-item-name">Git / GitHub</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:85%"></div></div>
+              <span class="tech-item-pct">85%</span>
+            </div>
+            <div class="tech-item-row">
+              <span class="tech-badge" style="background:#2496ED;font-size:9px;font-weight:900;">D</span><span class="tech-item-name">Docker</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:70%"></div></div>
+              <span class="tech-item-pct">70%</span>
+            </div>
+            <div class="tech-item-row">
+              <span class="tech-badge" style="background:#000;color:#fff;font-size:9px;font-weight:900;">&#x25B2;</span><span class="tech-item-name">Vercel</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:88%"></div></div>
+              <span class="tech-item-pct">88%</span>
+            </div>
+            <div class="tech-item-row">
+              <span class="tech-badge" style="background:#FF9900;font-size:9px;font-weight:900;">AW</span><span class="tech-item-name">AWS Basics</span>
+              <div class="tech-item-bar"><div class="tech-item-fill" style="width:60%"></div></div>
+              <span class="tech-item-pct">60%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <span>&copy; 2026 DeshanX Developer. All rights reserved.</span>
+      <span><a href="index.html" class="footer-home-link">&larr; Back to Home</a></span>
+      <span>Made with <span class="heart">&#x2764;&#xFE0F;</span> by DeshanX</span>
+    </footer>
+
+  </main>
+
+  <script src="projects.js"></script>
+</body>
+
+</html>
