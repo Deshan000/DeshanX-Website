@@ -738,12 +738,15 @@
 /* ============================================
    RESPONSIVE
    ============================================ */
+
+/* ── Wide tablet ── */
 @media (max-width: 1200px) {
   .skill-cards-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* ── Tablet ── */
 @media (max-width: 1024px) {
   .skill-cards-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -759,13 +762,18 @@
   }
 }
 
+/* ── Large mobile ── */
 @media (max-width: 768px) {
-  .skills-hero-title { font-size: 38px; }
+  .skills-hero-title {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
 
   .skills-stat-ribbon {
     flex-wrap: wrap;
-    gap: 16px;
-    padding: 20px 24px;
+    gap: 12px;
+    padding: 18px 20px;
+    justify-content: center;
   }
 
   .stat-chip-sep {
@@ -773,16 +781,52 @@
     height: 1px;
   }
 
-  .stat-chip { padding: 0 12px; }
+  .stat-chip {
+    padding: 0 12px;
+  }
 
   .learning-banner {
     flex-direction: column;
     align-items: flex-start;
     padding: 24px;
+    gap: 16px;
   }
 }
 
-@media (max-width: 640px) {
+/* ── Small mobile ── */
+@media (max-width: 480px) {
+  .skills-hero {
+    min-height: unset;
+    padding-bottom: 40px;
+  }
+
+  .skills-hero-title {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+  }
+
+  .skills-hero-sub {
+    font-size: 15px;
+  }
+
+  .skills-stat-ribbon {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 16px;
+  }
+
+  .stat-chip-sep {
+    width: 60%;
+    height: 1px;
+  }
+
+  .stat-chip {
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
+
   .skill-cards-grid {
     grid-template-columns: 1fr;
   }
@@ -795,5 +839,13 @@
     white-space: normal;
   }
 
-  .skills-hero-title { font-size: 32px; letter-spacing: -1px; }
+  .learning-items {
+    gap: 8px;
+  }
+
+  .learning-chip {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
 }
+

@@ -647,6 +647,8 @@
 /* ============================================
    RESPONSIVE
    ============================================ */
+
+/* ── Tablet ── */
 @media (max-width: 1024px) {
   .proj-showcase-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -655,17 +657,32 @@
   .techstack-categories {
     grid-template-columns: 1fr 1fr;
   }
+
+  .proj-hero-title {
+    font-size: 46px;
+  }
 }
 
+/* ── Large mobile ── */
 @media (max-width: 768px) {
   .proj-hero-title {
-    font-size: 38px;
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .proj-hero-sub {
+    font-size: 15px;
   }
 
   .proj-hero-stats {
-    flex-direction: column;
-    gap: 16px;
-    padding: 24px;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 18px 20px;
+    width: 90%;
+  }
+
+  .hero-stat {
+    padding: 12px 16px;
   }
 
   .hero-stat-divider {
@@ -673,8 +690,8 @@
     height: 1px;
   }
 
-  .hero-stat {
-    padding: 0 8px;
+  .hero-stat-num {
+    font-size: 26px;
   }
 
   .process-step {
@@ -691,11 +708,47 @@
   .step-connector-line {
     left: 29px;
   }
+
+  .step-content {
+    padding: 18px 20px;
+  }
 }
 
-@media (max-width: 640px) {
+/* ── Small mobile ── */
+@media (max-width: 480px) {
+  .proj-hero {
+    padding-top: 40px;
+    min-height: unset;
+    padding-bottom: 40px;
+  }
+
+  .proj-hero-title {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+  }
+
+  .proj-hero-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .hero-stat-divider {
+    width: 60%;
+    height: 1px;
+  }
+
+  .hero-stat {
+    padding: 10px 8px;
+    width: 100%;
+    text-align: center;
+  }
+
   .proj-showcase-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .techstack-categories {
@@ -712,11 +765,14 @@
 
   .process-step {
     grid-template-columns: 1fr;
+    gap: 14px;
+    padding-bottom: 32px;
   }
 
   .step-icon-wrap {
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
   }
 
   .step-connector-line {
@@ -729,6 +785,11 @@
 
   .pill {
     font-size: 13px;
-    padding: 8px 16px;
+    padding: 8px 14px;
+  }
+
+  .proj-hero-inner {
+    padding: 0 4px;
   }
 }
+

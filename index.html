@@ -46,6 +46,20 @@
       <a href="contact.html" class="btn-purple">
         Get In Touch <span class="arrow-icon">↗</span>
       </a>
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <!-- Mobile Drawer -->
+      <nav class="nav-drawer" id="nav-drawer">
+        <a href="#about">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn-purple" style="margin:12px 6% 4px; display:inline-flex; width:auto; align-self:flex-start;">Get In Touch ↗</a>
+      </nav>
     </header>
 
     <!-- Hero / About Me Section -->
@@ -393,9 +407,54 @@
 
   </main>
 
+  <!-- Mobile Nav Overlay -->
+  <div id="nav-overlay"></div>
+
   <!-- Lenis Smooth Scroll -->
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
   <script src="script.js"></script>
+
+  <!-- Hamburger Nav Toggle -->
+  <script>
+    (function () {
+      const btn = document.getElementById('hamburger');
+      const drawer = document.getElementById('nav-drawer');
+      const overlay = document.getElementById('nav-overlay');
+      if (!btn || !drawer || !overlay) return;
+
+      function openNav() {
+        btn.classList.add('open');
+        drawer.classList.add('open');
+        overlay.style.display = 'block';
+        requestAnimationFrame(() => overlay.classList.add('visible'));
+        btn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeNav() {
+        btn.classList.remove('open');
+        drawer.classList.remove('open');
+        overlay.classList.remove('visible');
+        setTimeout(() => { overlay.style.display = 'none'; }, 300);
+        btn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+
+      btn.addEventListener('click', () => {
+        btn.classList.contains('open') ? closeNav() : openNav();
+      });
+
+      overlay.addEventListener('click', closeNav);
+
+      drawer.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', closeNav);
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 1024) closeNav();
+      });
+    })();
+  </script>
 </body>
 
 </html>
